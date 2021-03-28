@@ -12,6 +12,12 @@ $(document).ready(function () {
         $(".menu-btn i").toggleClass("active");
     });
 
+    // toggle nav bar when clicked
+    $(".navbar .menu").click(function(){
+        $(".navbar .menu").toggleClass("active");
+        $(".menu-btn i").toggleClass("active");
+    });
+
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Data Scientist","Developer", "Competitive Programmer", "Traveller"],
