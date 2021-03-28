@@ -561,10 +561,10 @@ footer span a:hover {
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    /* .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
-    }
+    } */
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -588,6 +588,29 @@ footer span a:hover {
     .services .serv-content .card{
         width: 100%;
     }
+
+    .skills .title::before, .contact .title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 200px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    
+    .skills .title::after, .contact .title::after {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        width: 130px;
+        font-size: 20px;
+        color: crimson;
+        padding: 0 5px;
+        background: #fff;
+        transform: translateX(-50%);
+    } 
 }
 
 @media (max-width: 500px) {
@@ -616,4 +639,41 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+    
+    /* .skills .title::before {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        width: 300px;
+        font-size: 20px;
+        color: crimson;
+        padding: 0 5px;
+        background: #fff;
+        transform: translateX(-50%);
+    }  */
+
+    .skills .title::before, .contact .title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 200px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    
+    .skills .title::after, .contact .title::after {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        width: 130px;
+        font-size: 20px;
+        color: crimson;
+        padding: 0 5px;
+        background: #fff;
+        transform: translateX(-50%);
+    } 
+
+
 }
